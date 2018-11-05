@@ -1,0 +1,114 @@
+body {
+	background-image: url(moving-through-stars-in-space_-1zccenlb__F0000.png);
+
+}
+
+.titulo {
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+}
+
+.fontP {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 191px;
+	height: 260px;
+	padding-bottom: 10px;
+	/*  perspective: 1000px;  Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+	padding: 4px;
+
+}
+
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+
+
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-top: 20px;
+}
+
+.headerlogo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.spacebooks {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+.colorUbiqum,
+.colorBackCard {
+	color: #ed5d08;
+}
+
+.notfound {
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+
+.inputText {
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+
+}
