@@ -5,13 +5,11 @@
 	<meta charset="UTF-8">
 	<title>BookStore</title>
 	<link rel="stylesheet" href="bookstore.css">
-
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
 </head>
 
 <body>
@@ -21,7 +19,7 @@
 
 				<div class="header">
 					<div class="headerlogo">
-						<img src="kisspng-symbol-yellow-orange-logo-ibooks-5ab099b5e6c4e2%20peque%C3%B1o.png">
+						<img src="media/kisspng-symbol-yellow-orange-logo-ibooks-5ab099b5e6c4e2%20peque%C3%B1o.png">
 						<h1 class="titulo">BookStore | <span class="colorUbiqum">Ubiqum</span> Editions</h1>
 					</div>
 					<div class="input-group">
@@ -30,7 +28,6 @@
 					</div>
 				</div>
 				<hr>
-
 
 				<div class="flexbox">
 					<div class="notfound" v-if="filterdBooks.length == 0 && search != '' ">
@@ -50,23 +47,15 @@
 									<p class="fontP"><span class="colorBackCard">Title:</span> {{book.title}}</p>
 									<p class="imglist" style="max-width: 1000px;">
 										<a v-bind:href="book.detail" data-fancybox="images-preview" data-thumbs='{"autoStart":true}' v-bind:data-thumb="book.detail">
-											<button>More info</button>
-										</a>
-									</p>
-
+											<button>More info</button></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-			<footer>
-				
-			</footer>
 		</div>
 	</div>
-
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<script src="bookstore.js"></script>
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>

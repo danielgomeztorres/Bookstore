@@ -2,8 +2,8 @@ var app = new Vue({
 	el: "#app",
 	data: {
 		books: [],
-		search: '',
-		mostrar: false
+		search: ''
+		
 	},
 	methods: {
 		fetchStart: function (url) {
